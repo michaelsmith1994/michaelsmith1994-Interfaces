@@ -26,8 +26,9 @@ public class SampleClassC implements Comparable<SampleClassC>{
      *
      * @param other another object of type SampleClassC, which we are comparing to 'this' object.
      */
+    @Override
     public int compareTo(SampleClassC other) {
-        return 0;
+        return Integer.compare(this.val, other.val);//using the compare method for logical subtraction seemed best here.
     }
 
 }
